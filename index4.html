@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles4.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <div class="blur"></div>
+  <h1 id="title">Gaming Survey</h1>
+  <p id="description">This is a survey about gaming. Do you own a gaming console? Please fill the survey down below.</p>
+  <form id="survey-form">
+    <div class="info">
+      <label for="name" id="name-label">Name</label>
+      <input id="name" type="text" required placeholder="Write your name here"></input>
+    </div>
+    <div class="info">
+      <label for="email" id="email-label">Email</label>
+      <input id="email" type="email" required placeholder="Write your email here"></input>
+    </div>
+    <div class="info">
+      <label for="number" id="number-label">Age</label>
+      <input id="number" type="number" min="18" max="65" placeholder="Age"></input>
+    </div>
+    <p id="option-q"> Do you rather play games at night or earlier during the day?</p>
+    <div class="options">
+      <select id="dropdown">
+        <option>Choose an option</option>
+        <option>At night</option>
+        <option>During the day</option>
+      </select>
+    </div>
+    <p id="option-q"> Do you play more or less than 5 hours per day?
+    <div class="questions">
+      <ul class="list">
+        <li>
+          <label for="q1-a1">
+          <input type="radio" id="q1-a1" name="q1" value="more"></input>More than 5 hours
+          </label>
+        </li>
+        <li>
+          <label for="q1-a2">
+          <input type="radio" id="q1-a2" name="q1" value="less"></input>Less than 5 hours
+        </label>
+        </li>
+      </ul>
+    </div>
+    <p id="option-q"> Which console do you own (you can choose multiple answers)?</p>
+    <div class="checklist">
+      <div>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1">Playstation 5</label>
+      </div>
+      <div>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2">Xbox</label>
+      </div>
+      <div>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> Nintendo Switch</label>
+      </div>
+    </div>
+    <p id="option-q"> Do you own other consoles (handhelds etc.)? Do you have gaming routines? Let us know by writing down below.
+    <div class="textbox">
+      <textarea rows="5" cols="25" placeholder="Additional comments..."></textarea>
+    </div>
+    <div class="sendbox">
+      <input id="submit" type="submit">
+    </div>
+  </form>
+  <footer>
+    <p id="option-q"> Thank you for your time!</p>
+  </footer>
+</body>
+</html>
